@@ -1,0 +1,72 @@
+/* Social Icons
+-----------------------------------------------------------------------------*/
+
+#socialicons {
+
+	ul {
+		li {
+			border:0 !important;
+			margin:0 10px;
+			float:left;
+	
+			
+			a {
+			
+				-webkit-transition: all 100ms linear;
+				 -moz-transition: all 100ms linear;
+				 -o-transition: all 100ms linear;
+				 -ms-transition: all 100ms linear;
+				 transition: all 100ms linear;
+			
+			}
+		}
+	}
+}
+
+#social {
+	position:fixed;
+	z-index:10;
+	right:18px;
+	top:210px;
+	width:40px;
+	
+	:after,
+	 {
+		border:0
+	}
+	
+	li {
+	
+		margin-bottom:10px;
+		
+		a {
+			background:#333;
+			background:rgba(0,0,0,0.8);
+			color:#fff;
+			padding:6px 14px 0 8px;
+			margin-bottom:2px;
+			line-height:2em;
+			display:inline-block;
+			.border-radius(2px 0 0 2px);
+			
+			&:hover {
+				background:@secondary;
+				margin-left:-8px;
+				
+			}
+
+		}
+	}
+
+}
+
+
+.off-canvas-enabled {
+	#social {
+		width:100%;
+		
+		.zenleft ul{
+			float:right !important
+		}
+	}
+}

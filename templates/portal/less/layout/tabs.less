@@ -1,0 +1,63 @@
+/* Tabs
+-----------------------------------------------------------------------------*/
+
+#tabwrap {
+	background:@bgimage;
+	padding-top:0px;
+	
+	.zen-container {
+		border-bottom:1px solid lighten(#eee,2%)
+	}
+	
+	ul.nav-tabs {
+		background:@tabBG;
+		border-bottom:1px solid #fff;
+		margin:4px 0 0 0;
+		position:relative;
+		z-index:1;
+		
+	
+		li {
+		
+			a {
+			
+				padding:16px 24px 14px 20px;
+				border:0;
+				margin:0;
+				.border-radius(0);
+				color:@tabColor;
+			
+				&:hover {
+					background:@primary2;
+					border-bottom:4px solid @primary;
+					color:#fff;
+				}
+			}
+			
+			&.active a {
+				border:0;
+				background:@primary;
+				color:#fff;
+				border-bottom:4px solid @primary3;
+				
+				&:hover {
+					color:#fff;
+				}
+			}
+		}
+	}
+	
+	.tab-content {
+		padding: 40px 0px 5px;
+		margin-top:0;
+		background:none
+	}
+	
+	.zen-container {
+		padding-top:0;
+		width:100%;
+		padding:0;
+	}
+	
+	
+}

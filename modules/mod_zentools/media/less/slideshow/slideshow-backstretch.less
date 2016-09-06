@@ -1,0 +1,200 @@
+/**
+ * @package		Zen Tools
+ * @subpackage	Zen Tools
+ * @author		Joomla Bamboo - design@joomlabamboo.com
+ * @copyright 	Copyright (c) 2014 Copyright (C), Joomlabamboo. All Rights Reserved.. All rights reserved.
+ * @license		license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * @version		1.13.0
+ */
+
+
+.slideshowbackstretch {
+	
+	position:relative;
+	z-index:1;
+	
+.zenitem .allitems{
+		opacity:0;
+		width:auto;
+		left:40px !important;
+		
+		-webkit-transition: all 0.6s ease-in-out;
+		transition: all 0.6s ease-in-out;
+		box-shadow:none !important;
+		left:0;
+		padding:0 !important;
+		position:absolute;
+		z-index:2;
+		position:absolute;
+		right:auto;
+		margin:0 12.5%;
+		width:auto;
+		
+		&:before {
+			display:none;
+		}
+		
+		> div {
+			left:0;
+			position:relative;
+			float:none;
+			float:left;
+			width:100%;
+			overflow:hidden
+			
+		}
+		
+		h1,h2,h3,h4,h5,h6,p,strong {
+			font-size:1em;
+			line-height:1em;
+			color:#fff
+		}
+		
+		
+		a {
+			color:#fff
+		}
+		
+		.zentitle,.zentext,zenmore
+		{
+			position:relative;
+			width:100%;
+			z-index:2;
+			background:#333;
+			background:rgba(0,0,0,0.6);
+			
+			span {
+				padding:0 20px
+			}
+	
+		}
+		
+		
+	}
+	.zenitem.active  .allitems{	
+		opacity:1;
+		left:168px !important;	
+	}
+	
+	.grid_none {
+		width:auto
+	}
+	
+		
+.slide-controller
+	{
+		
+		position:relative;
+		z-index:0;
+		padding-top:0;
+		
+		.zenleft{
+			text-align:left;
+			margin-left:10%
+		}
+		
+		.zenright {
+			text-align:right;
+			margin-right:10%
+		}
+	}
+			
+	
+			
+			
+			.backstretch-nav
+				{
+					
+					left: 49px !important;
+					width:120px !important;
+					position:absolute;
+					z-index:1;
+					margin:0;
+					padding:0;
+					background:#eee;
+					color:#333;
+					
+					i {
+						cursor:pointer
+					}
+						
+					li {
+						float:left;
+						font-size:1.8em;
+						line-height:1em;
+						padding:9px 4px;
+						
+						&.backstretch-next {
+							float:right;
+						}
+					}
+					
+					
+					.slidecount {
+							display:inline-block;
+							font-size:11px !important;
+							font-style:italic;
+							text-align:center;
+							padding:17px 2px 0 4px !important
+						}
+					
+				}
+	
+				
+			.slidenavnumbers ul li {
+			
+				span
+					{
+					color:#333;
+					margin:0;
+					border-radius:0 !important;
+				}
+				
+				&.active span {
+					background:#333;
+					color:#fff
+				}
+			}
+	
+	
+	
+	.zentools .slidenavdiscs {
+	
+		margin-top:0;
+		padding-top:0;
+		margin-left:0;
+		
+		
+		.zenleft {
+			margin-left:50px;
+		}
+		
+		.zenright {
+			float:none;
+			width:auto;
+			margin-right:50px;
+		}
+		
+		ul {
+		
+			
+		
+			li {
+				padding:0 8px !important;
+				border:2px solid #fff;
+				border-radius:80px;
+				cursor:pointer;
+				height:20px;
+			
+				&.active {
+					border-color:#fff !important;
+					background:#fff !important
+				}
+		
+				&:hover {
+					background:#fff !important
+				}
+			}
+		}
+	}
+}

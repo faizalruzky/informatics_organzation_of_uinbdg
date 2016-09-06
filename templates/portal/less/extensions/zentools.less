@@ -1,0 +1,186 @@
+
+/* Zentools Resets
+-----------------------------------------------------------------------------*/
+.zentools {
+
+	.zenmore a{
+		padding: 6px 8px;
+		.border-radius(4px);
+		border-bottom: 2px solid @btnColor;
+		
+		&:hover {
+			background: lighten(@btnColor, 4%)
+		}
+	}
+	
+	&.grid ul li {
+		border: 0 !important;
+	}
+	
+	&.list ul li {padding: 8px 0}
+	
+	&.grid,
+	&.list {
+	
+		li {
+			border:0 !important
+		}
+		
+		.zenitem {
+			.outerboxstyle;
+		}
+		
+		.zeninner {
+			.innerboxstyle;
+			padding:0;
+			float:none
+		}
+		
+		.zenimage {
+			margin:0 !important
+		}
+		
+		
+		.zentitle {
+			padding:10px 10px 0
+		}
+		.zentext {
+			padding: 0 10px 10px
+		}
+		
+		
+		
+		.zenmore {
+			float:right;
+			margin-right:0px;
+			margin-top:20px;
+			
+			a {
+				font-size:90%
+			}
+		}
+		
+		.zencategory {
+			position:absolute;
+			top:0;
+			right:0;
+			background:@primary;
+			color:#fff;
+			padding:8px
+		}
+		
+		h2 {margin:0}
+		
+	}
+	
+	&.leading {
+	
+		&.zenborder {
+			img {
+				margin:0
+			}	
+		}
+		
+		li {
+		
+			border-bottom:1px solid @minorborderColor  !important;
+			padding:8px 0;
+			
+			.clear {
+				display:none
+			}
+		
+			&:first-child{
+			
+				.zenimage {
+					margin:0 0 30px;
+				}
+			
+				.zentext {
+					padding:10px 0
+				}
+			}
+		}
+	}
+}
+
+.zenborder img,
+img.border{
+	background:darken(#fafafa,1%) !important;
+	border:1px solid darken(#fafafa,5%) !important;
+}
+
+
+.zenrounded img {
+	.border-radius(4px 0 0 4px) !important;
+	margin:0
+}
+
+
+ul#filters {
+	background:#fff url(../images/dividerSingle.png);
+	border-bottom:4px solid @primary;
+	padding:20px 20px 10px 10px!important;
+	margin:-40px 0 30px !important;
+
+	
+	li {
+	
+		margin:0 10px 10px !important;
+	
+		a{
+			border:0;
+			color:#333;
+			background:none;
+		}	
+	}
+	
+	li a.active{
+		background:@secondary !important;
+		border:0 !important;
+		color:#fff;
+		
+		&:hover {
+			color:#fff
+		}
+	}
+	
+	
+	li a:hover {
+		color:@secondary
+	}
+}
+
+#gradient #midCol {
+	.moduletable {
+		background:none
+	}
+	
+	.zentools.grid {
+		.zenitem {
+			.outerboxreset;
+		}
+		
+		.innerboxreset
+	}
+}
+
+.sidebar {
+	.zenitem {
+		.outerboxreset !important;
+		background:none !important;
+	}
+	
+	.zeninner {
+		.innerboxreset;
+	}
+	
+	li {
+		padding:8px 0 !important;
+		border-bottom:1px solid @minorborderColor !important
+	}
+	
+	.zentitle {
+		padding:0 !important
+	}
+}

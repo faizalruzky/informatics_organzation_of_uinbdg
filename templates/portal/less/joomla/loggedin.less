@@ -1,0 +1,134 @@
+/* Logged In
+-----------------------------------------------------------------------------*/
+
+span.icon-user {
+	background:none;
+
+	&:before {
+		margin-top:4px
+	}	
+}
+
+
+.article-aside {
+	
+	position:relative;
+	
+	i {
+		background:none;
+		
+		&:before {margin-top:4px}
+	}
+	
+	.btn-group,
+	{
+		margin-top:-35px;
+		margin-right:0px;
+		margin-bottom:30px;
+		position:absolute;
+		right:0px;
+	
+		.btn  {
+			border:0;
+			background:rgba(0,0,0,0.5);
+			color:#fff;
+			.border-radius(4px) !important;
+		
+			span:before {
+				content: "";
+			}
+		
+			.caret {
+				border-top: 4px solid #fff;
+				border-right: 4px solid transparent;
+				border-left: 4px solid transparent;
+			}
+		
+			&:hover {
+				border:0;
+				color:@linkColorHover
+			}
+		}
+	
+	}
+	.btn-group.open .btn.dropdown-toggle,.btn:focus {
+		background:rgba(0,0,0,0.5);
+	}
+	
+	.dropdown-menu {
+	margin-top:9px !important;
+
+		margin-right:-15px !important;
+		.border-radius(0);
+		border:0;
+		color:@textColor;
+		a {color:@textColor;
+			&:hover {
+				color:@linkColorHover;
+				background:none;
+				
+				:before {
+					border:0
+				}
+			}
+		}
+		li {margin:0;padding:0 !important}
+	}
+}
+
+
+.edit {
+	
+	
+	i,.form-actions span {background:none}
+	
+	.pull-right {margin-top:20px}
+	
+	textarea {width:96%}
+	input {margin-right:20px}
+	
+	span :before, i:before {margin-top:4px !important}
+
+	a.modal {
+		border: 0px;
+		display: inline-block;
+		margin: 0 10px 0 0;
+		position: relative;
+		top: auto;
+		left: 0px;
+		width: auto;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		-webkit-box-shadow: 0 0 0 0;
+		-moz-box-shadow: 0 0 0 0;
+		box-shadow: 0 0 0 0;
+	}
+	
+}
+
+
+.hasimage {
+	.btn-group {
+		position:relative;
+		
+		a.btn.dropdown-toggle{
+			margin-top:40px;
+			position:absolute;
+			right:-10px;
+			background:rgba(0,0,0,0.8);
+			color:#fff;
+			text-shadow:none;
+		}
+		
+		span.caret {
+			border-top: 4px solid #fff;
+			border-right: 4px solid transparent;
+			border-left: 4px solid transparent;
+		}
+		
+		ul.dropdown-menu {
+			top:60px
+		}
+	}
+}

@@ -1,0 +1,41 @@
+<?php
+class JSecureConfig {
+	public $publish = '1';
+	public $key = 'f40ebad1f0c695dd146d067bf479f67e';
+	public $passkeytype = 'url';
+	public $options = '0';
+	public $custom_path = 'plugins/system/jsecure/404.html';
+	public $enableMasterPassword = '0';
+	public $master_password = '00be0f3bc3c448a2f4fcbc7b6e6b6746';
+	public $include_basic_confg = '0';
+	public $include_adminpwdpro = '0';
+	public $include_mail = '0';
+	public $include_ip = '0';
+	public $include_mastermail = '0';
+	public $include_adminid = '0';
+	public $include_logincontrol = '0';
+	public $include_metatags = '0';
+	public $include_purgesessions = '0';
+	public $include_log = '0';
+	public $include_showlogs = '0';
+	public $include_directorylisting = '0';
+	public $sendemail = '0';
+	public $sendemaildetails = '3';
+	public $emailid = '';
+	public $emailsubject = 'Access Admin';
+	public $iptype = '0';
+	public $iplistB = '';
+	public $iplistW = '';
+	public $mpsendemail = '0';
+	public $mpemailsubject = 'Jsecure Details has been changed';
+	public $mpemailid = '';
+	public $login_control = '0';
+	public $adminpasswordpro = '0';
+	public $metatagcontrol = '0';
+	public $metatag_generator = 'custom generator for seo';
+	public $metatag_keywords = 'custom keys for seo';
+	public $metatag_description = 'custom description for seo';
+	public $metatag_rights = 'custom rights for seo';
+	public $adminType = '1';
+	public $delete_log = '0';
+}

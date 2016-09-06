@@ -1,0 +1,57 @@
+/* Breadcrumb
+-----------------------------------------------------------------------------*/
+#breadcrumb {
+
+	.reset;
+	border: 0;
+	border-top:0;
+	margin-top:10px;
+	padding:10px 25px 15px 15px;
+	margin-bottom: 0px;
+	.border-radius(0 0 4px 4px);
+	font-size:90%;
+	text-transform:uppercase;
+
+	color: lighten(@textColor, 10%);
+	
+	.navsep {
+		color:#ccc !important
+	}
+
+	ul {
+		margin:0 0 0 -10px !important;
+		padding:4px 0 4px;
+		
+		li {border: 0 !important;margin:0 4px}
+		
+		a {color: lighten(@textColor, 10%);
+		
+			&:hover {
+				color:@secondary
+			}
+		}
+	}
+	
+	.divider {display:none}
+	
+	.navsep {
+		color:@grayLight;margin:0 6px 0 10px
+	}
+	
+}
+
+#gradient {
+	#breadcrumb {
+		.moduletable {
+			background:none;
+			padding:0
+		}
+		
+		.module-inner {
+			background:none;
+			border:0;
+			padding:0
+		}
+		
+	}
+}

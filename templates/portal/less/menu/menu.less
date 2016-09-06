@@ -1,0 +1,458 @@
+
+/* Nav
+-----------------------------------------------------------------------------*/
+
+	
+	
+/* Some resets and default values */
+#navwrap{
+	float: left;
+	width: 100%;
+	padding:0;
+	background: none;
+	.navwrapper {margin:0}
+	background: @bgimage;
+	
+	.t3-megamenu {
+		padding:0;
+	}
+	
+	
+	
+	/* Removes the arrow on open toggle menu - remove this to reinstate */
+	.navbar .nav>li>.dropdown-menu:before {
+		content:"";
+		border: 0;
+	}
+	
+	
+	.zen-container {
+		background: @navbgcolour;
+		padding:10px 30px;
+		position:relative;
+		border:0;
+		z-index:2;
+		width:@basewidth
+	}
+	
+	.separator {
+		display:inline-block;
+		float:none !important
+	}
+	
+	#navsearch {
+		min-height:0;
+		
+		form {margin:0}
+	}
+
+	
+	/* Menus to the right */
+	.zenright ul {float: right}
+	
+	/* Menus to the left */
+	.zenleft ul {float: left}
+	
+	/* menus int he middle */
+	.zencenter ul 
+		{
+			text-align:center;
+			float:none !important;
+
+			
+		
+			li { 
+				display:inline-block;
+				float:none !important;
+				
+
+				a,
+				.separator {
+					display:inline-block;
+					float:none !important
+				}
+				li {
+					display:block;
+					float:left!important;
+					text-align: left;
+					width: 100%;
+					text-indent: 0 !important;
+	
+					a {width:100%}
+					
+				}
+
+			}
+	}
+	
+
+	/* Main nav menu
+	-----------------------------------------------------------------------------*/
+	ul.nav{
+			margin-left: 0;
+			font-size:1em;
+			font-weight: bold;
+			margin-bottom: 0;
+			margin-top: 0 !important;
+			padding: 0;
+			
+				
+			> li {
+				float:left;
+				list-style-type:none;
+				text-align:center;
+				list-style-type: none;
+				.flatlist;
+				margin-right: 8px;
+				
+					
+				/* Top level menu items */
+			 	> a,
+			 	.separator {
+			 	text-transform: none;
+			 	text-align: left;
+			 	font-weight: normal;
+			 		.border-radius(4px);
+			 		border-bottom:0;
+			 		padding: 8px 20px;
+			 		text-transform: uppercase;
+			 		text-shadow:none;
+					margin-left:0px;
+			 		color:@navbarLinkColor;
+			 	
+			 		&:hover {
+			 			background:none;color: @navbarLinkColorHover;
+			 		}
+			 	}
+			 	
+			 	&.active > a,
+			 	&.active .separator {
+			 		color: @navbarLinkColorActive;
+			 		background:rgba(red(@primary3), green(@primary3), blue(@primary3), 0.8);
+			 		
+			 		color:#fff;
+			 		text-align: left;
+			 		.border-radius(4px);
+			 		.box-shadow(none)
+			 	}
+			 	
+			 	em {
+			 		font-size: 90%;
+			 	}
+		 		
+
+		 		.dropdown-menu::after {
+		 			border-bottom-color: @dropdownBackground
+		 		}
+		 		 	
+			
+				/* The marker for drop down items */
+			 	&.dropdown > a,
+			 	.separator  {
+			 		color:@navbarLinkColor}
+			
+				&.active.dropdown > a {color:#fff}
+			
+	
+				/* Remove the default bootstrap styling */
+				b.caret,
+				.dropdown-toggle .caret  {
+					display:none
+				}
+			
+				
+				/* Dropdown menus */
+				ul {
+					
+					/* Padding applied to drop down menu */
+					padding: 8px 0 !important;
+					
+					/* Remove border on last item */
+					.lastchild();
+					
+					> li {
+					
+						/* Resert Margin if changed above */
+						margin: 0 !important;
+						
+						/* Reset line height if changed above */
+						line-height: 1;
+						
+						/* Border on sub menu items */
+						border-bottom: 1px solid #232323;
+						
+						
+						/* Padding on sub menu items */
+						padding: 4px 8px;
+						
+							
+							a {
+								/* Link colours on sub menu */
+								color: @dropdownLinkColor;
+								
+								/* Some padding on sub menu items */
+								padding: 4px;
+								
+								&:hover{
+								
+									/* hover style on sub menu items */
+									color: @dropdownLinkColorHover;
+									background: none;
+								}
+							}
+							
+							&.active {
+							
+								background: rgba(0,0,0,0.8);
+								border:0;
+								border-top:1px solid #333;
+							
+								> a {
+							
+									/* Active Menu style */
+									background: none;
+									color:@dropdownLinkColorActive;
+									
+									&:hover {
+									
+										/* Active Menu hover */
+										color: @dropdownLinkColorHover
+									}	
+								}
+							}
+							
+							ul {
+							
+								padding:0 !important;
+								margin:0;
+								
+								li {
+								
+									 a { 
+									
+										color: @dropdownLinkColor;
+									
+									}
+									
+									&.active > a {
+										color:@dropdownLinkColorActive;
+									}
+								}
+								
+								
+							}
+						}
+					}
+				}
+			
+	
+	
+			/* Reset on drop down menu */
+			.dropdown-menu {
+			
+				background: @dropdownBackground;
+				overflow: visible;
+				padding:0;
+			
+				/* Reset any radii on sub menus */
+				.border-radius(0px);
+				
+				/* Position the drop down menu */
+				margin-top: 10px;
+			
+				
+				/* Reset alignment if needed */
+				text-align:left;
+				
+				/* Shadow on drop down menu*/
+			  	.box-shadow( 0 15px 15px rgba(0, 0, 0, 0.1));
+			  	
+			  	
+				/* Sets the colour of text if using mega menu */
+				color: @dropdownColor;
+				
+				/* Headings in the menu */
+				h1,h2,h3,h4,h5,h6 {color:@dropdownColor}
+				
+			
+				/* Small Adjustments on the sub menu items */
+				ul {width:100%;margin-top:0}
+				
+				/* Images in the drop down */
+				img {padding:0;margin:4px}
+			
+				.parent a {
+					background:none
+				}
+				
+				a:after {
+					border:2px solid rgba(255,255,255,0.4);
+					margin-right:0px;
+					.border-radius(4px)
+				}
+			
+				/* Icons */
+				i {
+					width:20px;
+					display:inline-block
+				}
+			
+				/* Zentools in Mega Menu */
+				.zentools.list li {
+					border: 0 !important;
+					padding: 8px 0;
+					width:auto !important
+				}
+				
+				.zentools.list li:last-child {
+					border-bottom: 0 !important;
+				}
+				
+				 .mega-inner {
+				 	padding:0
+				 }
+				
+				.zentools {
+				
+					/* Old grid css for backwards compatibility and Jb Type grid syntax
+					-----------------------------------------------------------------------------*/
+					.grid_one,.grid_two,.grid_three,.grid_four,.grid_five,.grid_six,.grid_seven,.grid_eight,.grid_nine,.grid_ten,.grid_eleven,.grid_3,.grid_4,.grid_2,.grid_1,.grid_5,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,
+					#navwrap li.grid_4
+					{
+					margin-right: 3.8%;
+					float: left;
+					position: relative;
+					min-height: 1px
+					}
+					
+					.grid_one
+					{
+					width: 4.85%
+					}
+					
+					.grid_11 {
+					width: 5.7%;
+					}
+					
+					.grid_10 {
+					width: 6.7%;
+					}
+					
+					.grid_9 {
+					width: 7.9%;
+					}
+					
+					.grid_8 {
+					width: 9.3%;
+					}
+					
+					.grid_7 {
+					width: 11.1%;
+					}
+					
+					.grid_two
+					{
+					width: 13.45%
+					}
+					
+					.grid_5 {
+					width: 17%;
+					}
+					
+					.grid_three,.grid_4
+					{
+					width: 22.05%
+					}
+					
+					#navwrap li.grid_4 {width:22.05% !important}
+					
+					.grid_four,.grid_3
+					{
+					width: 30.75%
+					}
+					
+					.grid_five
+					{
+					width: 39.45%
+					}
+					
+					.grid_six,.grid_2
+					{
+					width: 48%
+					}
+					
+					.grid_seven
+					{
+					width: 56.75%
+					}
+					
+					.grid_eight
+					{
+					width: 65.4%
+					}
+					
+					.grid_nine
+					{
+					width: 74.05%
+					}
+					
+					.grid_ten
+					{
+					width: 82.7%
+					}
+					
+					.grid_eleven
+					{
+					width: 91.35%
+					}
+					
+					.grid_twelve,grid_,.grid_1
+					{
+					width: 100%;
+					float: left
+					}
+					
+					.zenlast,.jblast  {
+					float: right;margin: 0;
+					}
+					
+					.zenitem,
+					.zeninner,
+					.zentitle,
+					.zenimage,
+					ul {
+						background:none;
+						padding:0 !important;
+						border:0 !important
+					}
+					
+				}
+			}
+		}
+		
+		/* Need to reset the Dropdown toggle and active bg hover */
+		li.dropdown.open > .dropdown-toggle {
+			background-color: none !important;
+			color: #fff;
+		}
+		
+		li.dropdown.active > .dropdown-toggle,
+		li.dropdown.open.active > .dropdown-toggle,
+		> li.dropdown.open.active > a:hover  {
+			background-color: none !important;
+			color: #fff;
+		}
+
+	.mega-caption-empty {
+		display:none
+	}
+	
+	
+	li .mega-caption {
+		color:@navbarText
+	}
+	
+	li.active .mega-caption {
+		color:#fff
+	}
+}

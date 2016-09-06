@@ -1,0 +1,187 @@
+/* Sidebar
+-----------------------------------------------------------------------------*/
+
+	.sidebar {
+		float:left !important;
+		margin:0;
+		
+		ul {
+			.lastchild();
+			.firstchild();
+			
+			li {	
+				border-bottom:1px solid @minorborderColor;
+			padding:8px 0
+				
+
+			}
+			
+			&.nav-tabs {
+				li {	
+						padding:0;			
+						
+						&.active {
+							border-bottom:1px solid #fff !important
+						}
+					}
+			}
+		}
+		
+
+		
+		.moduletable {
+			
+			.outerboxstyle;
+			
+			margin-bottom:30px;
+			
+			.module-inner {
+				.innerboxstyle
+			}
+		}
+	}
+	
+	.home {
+		.sidebar {
+			margin-top:30px;
+		}
+	}
+
+
+#tabwrap,
+#mainWrap {
+	#side-bar-tabs {
+		
+		margin-bottom:30px;
+		float:left;
+		width:100%;
+		margin-top:10px;
+		
+		.tab-content {
+		
+			padding:10px 20px;
+			
+			ul {
+			
+				margin:0;
+				
+				li {
+					list-style-type:none;
+					
+					padding:8px 0;
+					
+					a {
+					
+					}
+				}
+				
+				&.nav-tabs li {
+					padding:0 !important
+				}
+			}
+		}
+		
+		.innerbox {
+			padding:0;
+			float:none
+		}
+		
+		ul.nav-tabs {
+			background:url(../images/dividerSingle.png) 1px 1px;
+			border-bottom:1px solid #eee;
+			margin-top:0;
+			
+			li {
+			
+				padding:0 !important;
+			
+				a {
+					padding:10px 20px;
+					border:0;
+					margin:0;
+					.border-radius(0);
+					color:@textColor;
+				
+					&:hover {
+						background:none;
+						border-bottom:0;
+						color:@secondary;
+					}
+				}
+				
+				&.active {
+				
+					a {
+						border:0;
+						background:#fff;
+						color:@primary;
+						border-bottom:0;
+						border:1px solid darken(#fafafa,5%) !important;
+						border-width:0 1px 0!important;	
+					}
+				}
+				
+				&:first-child a {
+					border-left:0 !important
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+#tabwrap #side-bar-tabs.thin,
+#mainWrap #side-bar-tabs.thin {
+	ul.nav-tabs {
+	
+		padding:10px 20px 10px 10px;
+	
+		li {
+			padding:2px 0px 0px 10px;
+			border-bottom:1px solid @minorborderColor;
+			width:auto;
+		
+			a {
+				text-indent:-9999em;
+				background:@primary;
+				width:0px;
+				height:16px;
+				padding:0 8px !important;
+				display:inline-block;
+				margin-right:10px;
+				.border-radius(20px);
+				float:left;
+				
+				&:hover {
+					background:@secondary !important
+				}
+			}
+			
+			&.active {
+		
+				a {
+					background:@secondary !important;
+					padding:0 8px !important;
+				}			
+			}
+		}
+	}
+}
+
+#mainWrap #side-bar-tabs.thin {
+	ul.nav-tabs {
+		padding:10px 20px 10px 10px !important;
+	
+		li {
+			padding:0 0 
+		}
+		
+	}
+}
+
+#mainWrap #side-bar-tabs {
+	margin-top:0
+}

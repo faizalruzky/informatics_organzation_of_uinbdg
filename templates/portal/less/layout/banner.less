@@ -1,0 +1,144 @@
+/* Colour behind banner
+-----------------------------------------------------------------------------*/
+#bannerwrap {
+
+		float: left;
+		width: 100%;
+		
+		/* Variable for entire bg row */
+		background: @bannerBG;
+		
+		/* Bottom border */
+		border-bottom: @bannerBorderBottom;
+		
+		/* Top border */
+		border-top: @bannerBorderTop;
+		
+		/* banner Text colour */
+		color: @bannertextcolor;
+		
+		
+		a {
+			/* The banner link colour */
+			color: @bannerlinkcolor;
+			
+			&:hover {
+				/* The banner link hover colour */
+				color: @bannerlinkcolorhover;
+			}
+		}
+		
+		h1,h2,h3,h4,h5,h6 {
+			color: @bannerheadingcolor;
+		}
+		
+		.clear {
+			height:0
+		}
+		
+		
+		.zen-container {
+			
+			/* bg on main banner container */
+			background: @bannerContainerBG;
+
+			/* banner border */
+			border-banner: @bannerContainerTopBorder;
+			
+			/* Bottom border */
+			border-bottom: @bannerContainerBottomBorder;
+			
+			/* banner padding */
+			padding: @bannerpadding;
+			
+			position:relative;
+			
+			border-bottom:4px solid @primary	
+		}
+		
+		
+		.slide-controller {
+			display:none
+		}
+		
+		
+		.allitems {
+		
+			background:@secondary;
+			border-left:8px solid @secondary2;
+			left:-8px;
+			right:auto;
+			padding:8px 20px;
+			top:auto;
+			bottom:80px;
+			
+			line-height:1.8em;
+			
+			
+			a {
+				color:#fff;
+			}
+			
+			h2 {
+				margin:0
+			}
+			
+		}
+		
+		.zentools.flexslider {
+			.slides img {
+				margin:0	
+			}
+		}
+		
+		.slideshowstandard {
+			float:left;
+			width:100%;
+			padding-bottom:0
+		}
+		
+		#banner {
+				
+				position:relative;
+				z-index:1;
+				width:100%;
+				.border-radius(0 60px 0 0);
+				float:left;
+			
+				img {
+					.border-radius(0 60px 0 0);
+				}
+				
+				.flex-direction-nav {
+				
+					li {
+						margin-top:-70px;
+						
+						a {
+							background:rgba(0,0,0,0.6);
+							padding:10px 20px 20px 10px !important;
+							border: 1px solid rgba(0,0,0,0.1);
+							
+							&:hover {
+								background:rgba(0,0,0,0.9);
+							}
+						
+							&.prev {
+								right:70px;
+								left:auto
+							}
+						
+							&.next {
+								right:20px
+							}
+						}
+					}
+					
+					
+					a {
+						color:#fff;
+						opacity:1
+					}
+				}
+		}
+}

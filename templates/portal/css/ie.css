@@ -1,0 +1,9 @@
+/* Fixes for rgba */
+
+.item-image,
+.items-leading .pull-left {
+	
+	width:107%;
+	
+
+}

@@ -1,0 +1,226 @@
+/* Zenkit
+-----------------------------------------------------------------------------*/
+#zenkit {
+
+	&.filter {
+		.k2FeedIcon {
+			top:-10px;
+			right:10px
+		}
+	}
+	
+	#zenfilters,
+	#zenkit-tabs.nav-tabs {
+		
+		background:#fff url(../images/dividerSingle.png);
+		border-bottom:4px solid @primary;
+		padding:10px 20px!important;
+	
+		li a{
+			border:0;
+			color:#333;
+			background:none;
+			.border-radius(4px);
+			padding:4px 10px;
+			margin-right:10px
+		}
+		
+		li a.active,
+		li.active a{
+			background:@secondary !important;
+			border:0 !important;
+			color:#fff;
+			
+			&:hover {
+				background:@secondary !important;
+				color:#fff !important
+			}
+		}
+		
+		
+		li a:hover {
+			color:@secondary !important;
+			background:none !important;
+		}
+	
+		
+	}
+	
+	ul {
+		
+		li {
+			
+		}
+	}
+	
+	&.slideshow,
+	&.slideshow-overlay {
+	
+		.flex-direction-nav {
+		
+			li {
+			
+				float:left;
+			
+				a {}
+			}
+		}
+	
+	}
+	
+	.buttons,
+	.flex-direction-nav  {
+		li {border-bottom:0}
+	}
+	
+	&.tiles {
+		img.border{
+			.reset;
+			max-width:100%
+		}
+	}
+	
+	.k2FeedIcon.notitle {
+		top:-10px;
+		right:0px
+	}
+	
+	&.carousel {
+		.flex-control-nav {
+			display:none
+		}
+	}
+	
+	.itemTags {
+	
+		margin-top:20px;
+	
+		li {
+			float:left;
+			margin-right:10px
+		}
+		a {
+			background: @secondary;
+			color: #fff;
+			padding: 3px 6px;
+			.border-radius(4px);
+			
+			&:before {
+				font-family: 'FontAwesome';
+				content:"\f02b";
+			}
+			
+			&:hover {
+				background:@primary
+			}
+		}
+	}
+	
+	.commentsForm {
+		.inputbox {
+			padding:20px
+		}	
+	}
+	
+	
+	&.featured {
+		
+		margin-top:-35px;
+	
+		.zenkit-image {
+		
+			margin:-20px -20px 0 -20px;
+				
+			a {
+				display:block
+			}
+			
+			img.border{
+				border:0 !important;
+				.box-shadow(none);
+				padding:0;
+				max-width:100%;
+				width:100%
+				
+			}
+		}
+		
+		.zenkit-more{
+			margin-bottom:30px;
+			
+		}
+		
+		.contentheading {
+			position:absolute;
+			top:30px;
+			z-index:1;
+			margin-left:-33px;
+			.headingstyle;
+			
+			a {
+				color:#fff;
+			}
+		}
+	}
+	
+	&.zenkit-itemview.featured {
+		margin-top:-20px !important;
+		
+		span.itemImage img {
+			margin:0 0 30px
+		}
+		
+		li.resize {
+			position:relative;
+			top:-20px
+		}
+	}
+	
+	#k2Links {
+		li {
+			border-bottom:1px solid @minorborderColor !important;
+			
+			&:hover a {
+				color:@secondary !important
+			}
+		}
+		
+		a {
+			&:hover {
+				color:@secondary !important
+				
+			}
+		}
+	}
+	
+	&.carousel {
+		.flex-direction-nav {
+			span {
+				font-size:1.8em
+			}
+			
+			.next {
+				margin-top:-25px
+			}
+		}
+	}
+	
+	.tags a{
+		background:@secondary;
+		padding:4px 10px 4px 0;
+		.border-radius(4px);
+		
+		&:hover {
+			background:@primary
+		}
+		
+		span {
+			background:none;
+			
+			&:before {
+				color:#fff
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,111 @@
+/* Bottom row
+-----------------------------------------------------------------------------*/
+
+#bottomrow {
+
+		float: left;
+		width: 100%;
+		
+		/* Variable for entire bg row */
+		background: @bottomBG;
+		
+		/* Bottom border */
+		border-bottom: @bottomBorderBottom;
+		
+		/* Top border */
+		border-top: @bottomBorderTop;
+		
+		/* bottom Text colour */
+		color: @bottomtextcolor;
+		
+		text-shadow:1px 1px 0 darken(@bottomContainerBG, 12%);
+		
+		.divider {
+			border-top:1px solid darken(@bottomContainerBG, 4%);
+			border-bottom:1px solid lighten(@bottomContainerBG, 4%);
+			height:2px
+		}
+		
+		
+		
+		ul {
+		
+			margin:0;
+			
+			.firstchild();
+			.lastchild();
+		
+			li {
+				list-style-type:none;
+				padding:8px 0;
+				border-bottom:1px solid darken(@bottomContainerBG, 10%);
+				border-top:1px solid lighten(@bottomContainerBG, 10%);
+				
+				a {
+					text-shadow:1px 1px 0 darken(@bottomContainerBG, 12%)
+				}
+			}
+		}
+		
+		a {
+			/* The bottom link colour */
+			color: @bottomlinkcolor;
+			
+			text-shadow:1px 1px 0 #eee;
+			
+			
+			&:hover {
+				/* The bottom link hover colour */
+				color: @bottomlinkcolorhover;
+			}
+		}
+		
+		h1,h2,h3,h4,h5,h6 {
+			color: @bottomheadingcolor;
+		}
+		
+		.innerboxstyle {float:none}
+		
+		
+		.zen-container {
+			
+			/* bg on main bottom container */
+			background: @bottomContainerBG;
+			
+			/* Bottom border */
+			//border-bottom: @bottomContainerBottomBorder;
+			
+			/* Top border */
+			border-top: @bottomContainerTopBorder;
+			
+			/* bottom padding */
+			padding: @bottompadding;
+			
+			.border-radius(4px);
+			
+			position:relative;
+			
+			width:@basewidth;
+		
+			
+			&::after {
+				content:"";
+			   	position:absolute;
+			   	z-index:1;
+			   	top:0px;
+			   	left:0px;
+			   	border-width:64px 64px 0 0;
+			   	border-style:solid;
+			   	border-color:darken(@bottomContainerBG,10%) @bottomContainerBG ;
+			   	.border-radius(0)
+			}
+			
+		}
+
+		.moduletable {
+			margin-bottom:50px;
+			position:relative;
+			z-index:10
+			
+		}
+}

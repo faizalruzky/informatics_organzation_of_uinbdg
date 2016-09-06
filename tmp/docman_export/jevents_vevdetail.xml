@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>JEvents</name>
+  <author>Mathis Dirksen-Thedens</author>
+  <version>1.0</version>
+  <description>Definition for JEvents Component</description>
+  <reference>
+     <table name="jevents_vevdetail">
+      <field type="referenceid" name="evdet_id" translate="0">ID</field>
+      <field type="titletext" name="summary" translate="1">Summary</field>
+      <field type="htmltext" name="description" translate="1">Description</field>
+      <field type="text" name="location" translate="1">Location</field>
+      <field type="text" name="url" translate="1">URL</field>
+      <field type="text" name="organizer" translate="1">Organizer</field>
+      <field type="text" name="contact" translate="1">Contact</field>
+      <field type="text" name="extra_info" translate="1">Extra</field>
+     </table>
+  </reference>
+</joomfish>

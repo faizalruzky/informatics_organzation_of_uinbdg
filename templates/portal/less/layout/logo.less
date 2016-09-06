@@ -1,0 +1,82 @@
+/* Logo
+-----------------------------------------------------------------------------*/
+body #logowrap {
+
+
+	h1,
+	h1 a,
+	h2,
+	h2 a,
+	h3,
+	h3 a {
+		margin: 0;
+		color:@logoColor;
+		font-size: @logoSize;
+		text-decoration:none;
+		font-weight:300;
+		
+		&:hover {
+			color:#eee
+		}
+	}
+
+	/* Variable for entire bg row */
+	background: @logoBG;
+	
+	/* Bottom border */
+	border-bottom: @logoBorderBottom;
+	
+	/* Top border */
+	border-top: @logoBorderTop;
+	
+	/* grid6 Text colour */
+	color: @logotextcolor;
+	
+	
+	
+	h1,h2,h3,h4,h5,h6 {
+		color: @logoheadingcolor;
+	}
+	
+	
+	.zen-container {
+		
+		/* bg on main grid6 container */
+		background: rgba(0,0,0,0.4);
+		
+		/* grid6 border */
+		border-top: @logoContainerTopBorder;
+		
+		/* Bottom border */
+		border-bottom: @logoContainerBottomBorder;
+		
+		/* grid6 padding */
+		padding: @logopadding;
+		
+		.border-radius(0 60px 0 0);
+		
+		position:relative;
+		
+		z-index:2;
+		
+		width:@basewidth
+		
+	}
+
+	
+	#tagline {
+			font-size: 90%;
+			margin-top:10px;
+	
+			span {
+				font-size: 90%;
+				color: @taglineColor;
+				font-style: italic;
+				font-weight: normal;
+				display:block;
+				margin-top: @taglineTop;
+				margin-left: @taglineLeft
+			}
+		}
+	
+}

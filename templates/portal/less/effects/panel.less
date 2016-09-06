@@ -1,0 +1,92 @@
+/* Hidden Panel - Core often overriden in template overrides
+-----------------------------------------------------------------------------*/
+#paneltrigger {
+	position: absolute;
+	top: 0px;
+	left:auto;
+	right: 0px;
+	z-index: 1000;
+
+	
+	a{
+
+		background:rgba(0,0,0,0.6) !important;
+		padding: 8px 14px;
+		height:44px;
+		display:block;
+		width:40px;
+		.border-radius(0 90px 0 0);
+		
+		
+		&:hover {
+			border-bottom-color: darken(@primary, 20%);
+			background:@secondary !important;
+		}
+		
+		span.icon-plus {
+			color:#fff;
+			padding:20px;
+			position:absolute;
+			margin-left:-10px
+		}
+		
+		&:focus {
+			outline:none
+		}
+	}
+}
+
+#panel {
+	
+	.simplelist();
+	display: none;
+	z-index:10000;
+	background:none;
+	color:#fff;
+	.box-shadow(none);
+	border:0;
+	
+	h1,h2,h3,h4,h5,h6,p {
+		color:#fff
+	}
+	
+	::after {
+		content:"";
+		display:none;
+	   	position:absolute;
+	   	top:0px;
+	   	left:0px;
+	   	border:0;
+	   	.border-radius(0)
+	}
+	
+	
+	.modal-header {
+		margin-top: -20px;
+		padding-bottom: 30px;
+		border:0;
+		
+		button {
+			color:#fff;
+			opacity:1
+		}
+	}
+	
+	.zen-module-body {
+	padding: 0
+	}
+	
+	.input-append .add-on, .input-prepend .add-on
+	{
+		background-color: #fff;
+	}
+	
+}
+
+.logo.zencenter {
+	#paneltrigger {
+		span.icon-plus {
+			margin-left:-30px
+	}
+}
+}

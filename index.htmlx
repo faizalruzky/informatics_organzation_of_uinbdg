@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function delayer(){
+    window.location = "http://himatif.uinsgd.ac.id"
+}
+//-->
+</script>
+</head>
+<body onLoad="setTimeout('delayer()', 9999999)">
+<center>
+<img src="http://himatif.uinsgd.ac.id/images/stories/loo.png"  width="170px" height="165px" border="0" alt="HIMATIF"/>
+
+<h2><font face="Century Gothic">HIMPUNAN MAHASISWA TEKNIK INFORMATIKA</font></h2>
+<h2><font face="Century Gothic">UIN SGD BANDUNG</font></h2>
+
+<h1><font face="Century Gothic">- Website sedang dalam perbaikan -</font></h1>
+</center>
+
+</body>
+</html>

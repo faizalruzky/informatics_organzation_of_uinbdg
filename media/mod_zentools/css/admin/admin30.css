@@ -1,0 +1,224 @@
+/**
+ * @package		##package##
+ * @subpackage	##subpackage##
+ * @author		##author##
+ * @copyright 	##copyright##
+ * @license		##license##
+ * @version		##version##
+ */
+
+
+
+#options-imageDirectory .control-label {
+	width: 187px;
+}
+
+#options-K2 .control-label {
+	width: 216px;
+}
+
+#options-text .control-label {
+	width: 179px;
+}
+
+#options-date .control-label {
+	width: 150px;
+}
+
+#options-grid .control-label {
+	width: 214px;
+}
+
+#options-imageresize .control-label {
+	width: 172px;
+}
+
+#options-masonry .control-label {
+	width: 180px;
+}
+
+#options-slideshow .control-label {
+	width: 204px;
+}
+
+
+#items
+{
+	position: relative;
+	left: 0;
+	max-width: 400px;
+	width:100%;
+	padding: 30px;
+	clear: both;
+	min-height: 128px;
+	background: #f9f9f9;
+	border: 4px dashed #eee;
+	height: 100%;
+	float: left;
+	
+}
+
+#items:after {
+
+}
+
+#items ul#sortable {
+	z-index: 1;
+	position: relative;
+}
+
+#items ul
+{
+	list-style-type:none;
+	max-width: 400px;
+	width:100%;
+	margin:8px 0 30px;
+	float: left;
+}
+
+#items li
+{
+	font-size:13px;
+	height:30px;
+	line-height: 30px;
+	list-style-type:none;
+	cursor:move;
+	text-align:center !important;
+	margin:0 3px 10px !important;
+	padding:4px !important;
+	color: #444;
+	border: 1px solid #ccc !important;	
+	
+}
+
+
+
+#items li.disabled {
+	cursor:default;
+	border: 0 !important;
+}
+
+#items li:hover {
+	background: #eee;
+	border-radius:3px;
+	border:1px solid #aaa;
+}
+
+#sortable li {
+
+}
+
+#items li.ui-state-highlight,#sortable2 li.ui-state-highlight
+{
+	background:#FCFBDD;
+}
+ul#sortable {
+	
+
+}
+
+
+ul#sortable2
+{
+	background:none;
+	border:0;
+	position: absolute;
+	left: 500px;
+}
+
+
+
+ul#sortable2 li
+{
+	border-radius:3px;
+	width:40%;
+
+	float:left;
+	color:#fff;
+	font-size:90%;
+	height:16px;
+	line-height:16px !important;
+	display:inline;
+	padding-left:0;
+	text-align:center;
+	margin:0 10px 10px 0;
+	border: 1px solid #DDD;
+	border-radius: 2px;
+	text-shadow: 0 1px 0px white;
+	-webkit-box-shadow: 0 1px 1px #fff;
+	-moz-box-shadow:    0 1px 1px #fff;
+	box-shadow:         0 1px 1px #fff;
+	font: bold 12px Sans-Serif;
+	padding: 10px 10px 0;
+	white-space: nowrap;
+	vertical-align: middle;
+	color: #666;
+	background: transparent;
+	cursor: pointer;
+}
+
+#sortable2 li:hover {
+	cursor: move;
+	border-color: #999;
+	background: #eee;
+	}
+
+#items li.disabled,ul#sortable2 li.disabled {
+	border: 0;
+	background: 0;
+	font-size: 110%;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	box-shadow:none;
+	color: #333;
+}
+
+#zenmessage p
+{
+	height:10px;
+	overflow:hidden;
+	background:url(../../images/admin/loading.gif) no-repeat left center;
+	position:absolute;
+	margin-top:-26px;margin-left: 150px;
+	width:80%;
+	display:none;
+	color:#999;
+	padding:10px 10px 10px 40px;
+}
+
+#instructions,.zennotice
+{
+	background:#FFF6BF url(../../images/admin/gear_24.png) no-repeat 10px center;
+	color:#514721;
+	border:1px solid #FFD324;
+	width:60%;
+	cursor:pointer;
+	margin:10px;
+	padding:10px 50px
+}
+
+#jform_params_artids_chzn, #jform_params_itemid_chzn, #jform_params_category_id_chzn {
+  width: 220px !important;
+}
+
+#jform_params_itemid_chzn div.chzn-drop, #jform_params_category_id_chzn div.chzn-drop {
+  width: 220px !important;
+}
+
+/* Modified to get styling right with Advanced Module Manager */
+.panel .assignment-options label {
+ background: none repeat scroll 0 0 transparent;
+ margin: 7px 10px 5px 0 !important;
+ padding: 0 !important;
+ width: auto !important;
+}
+
+.panel .assignment-options li:last-child label {
+ border: 0;
+}
+.panel .assignment-options select {
+ margin-top: 5px;
+}
+/* End Modify */

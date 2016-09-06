@@ -1,0 +1,82 @@
+a.btn,
+button.btn,
+.zenmore a,
+.btn-primary{
+	padding: 6px 8px;
+	.border-radius(0 4px 0 0) !important;
+	background: @btnColor;
+	border: 0;
+	border-left: 4px solid darken(@btnColor,20%);
+	color:#fff;
+	text-shadow: 1px 1px 0 darken(@btnColor, 10%) !important;
+	-webkit-transition: background-color 100ms linear;
+     -moz-transition: background-color 100ms linear;
+     -o-transition: background-color 100ms linear;
+     -ms-transition: background-color 100ms linear;
+     transition: background-color 100ms linear;
+	     
+	&:hover {
+		background: darken(@btnColor, 10%) !important;
+		color:#fff
+	}
+	
+	span:before {
+		padding-left: 0px;content: "+";
+		
+		   
+		   &:hover {
+		   		color:#333
+		   }
+	}
+}
+
+button.btn-danger,
+a.btn-danger {
+	background:@btnDangerBackground;
+	border-left: 4px solid darken(@btnDangerBackground,20%);
+	text-shadow: 1px 1px 0 darken(@btnDangerBackground, 10%) !important;
+	
+	&:hover {
+		background: lighten(@btnDangerBackground, 10%) !important;
+		color:#fff
+	}
+}
+
+
+button.btn-info,
+a.btn-info {
+	background:@btnInfoBackground;
+	border-left: 4px solid darken(@btnInfoBackground,20%);
+	text-shadow: 1px 1px 0 darken(@btnInfoBackground, 10%) !important;
+	
+	&:hover {
+		background: lighten(@btnInfoBackground, 10%) !important;
+		color:#fff
+	}
+}
+
+
+button.btn-warning,
+a.btn-warning{
+	background:@btnWarningBackground;
+	border-left: 4px solid darken(@btnWarningBackground,20%);
+	text-shadow: 1px 1px 0 darken(@btnWarningBackground, 10%) !important;
+	
+	&:hover {
+		background: lighten(@btnWarningBackground, 10%) !important;
+		color:#fff
+	}
+}
+
+
+button.btn-success,
+a.btn-success{
+	background:@btnSuccessBackground;
+	border-left: 4px solid darken(@btnSuccessBackground,20%);
+	text-shadow: 1px 1px 0 darken(@btnSuccessBackground, 10%) !important;
+	
+	&:hover {
+		background: lighten(@btnSuccessBackground, 10%) !important;
+		color:#fff
+	}
+}
